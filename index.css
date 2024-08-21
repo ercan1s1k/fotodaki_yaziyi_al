@@ -1,0 +1,98 @@
+ body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            height: 100%;
+            max-height: 486px;
+            background: white;
+            padding: 20px;
+margin-top:0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: #f5e6a4;
+        }
+        .output {
+            margin-top: 20px;
+            white-space: pre-wrap;
+            text-align: justify;
+            overflow-y: auto;
+            max-height: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .hidden {
+            display: hidden;
+        }
+		.copy-button.hidden{
+			display:none;
+		}
+        .copy-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+		#copyButton {
+			diplay:none;
+		}
+        .copy-button:hover {
+            background-color: #0056b3;
+        }
+        .custom-alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        input[type="file"], select, button {
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .input-group {
+            display: grid;
+            grid-template-columns: 50% 25% 25%;
+            gap: 10px;
+			margin-right:20px;
+        }
+		select, option{
+			font-size:13px;
+			background-color:#28a745;
+			color:white;
+		}
+		#processButton{
+			font-size:13px;
+		}
